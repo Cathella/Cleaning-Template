@@ -1,20 +1,24 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav,
-nav ul {
+nav ul,
+.intro {
   display: flex;
   flex-direction: row;
 }
 
-nav {
+nav,
+.intro {
   justify-content: space-between;
   align-items: center;
 }
 
-nav div {
+nav div,
+.intro form {
   display: flex;
   flex-direction: column;
 }
@@ -25,4 +29,9 @@ nav ul {
 
 nav li {
   margin: 0 1em;
+}
+
+
+.intro {
+  padding: 3em 0;
 }
