@@ -6,19 +6,30 @@
 
 nav,
 nav ul,
-.intro {
+.intro,
+.offer,
+.clean,
+.recents,
+.about ul,
+.other-services,
+.other-services ul,
+footer ul {
   display: flex;
   flex-direction: row;
 }
 
 nav,
-.intro {
+.intro,
+.about ul,
+.other-services,
+footer ul {
   justify-content: space-between;
   align-items: center;
 }
 
 nav div,
-.intro form {
+.intro form,
+.projects {
   display: flex;
   flex-direction: column;
 }
@@ -32,6 +43,27 @@ nav li {
 }
 
 
-.intro {
+.intro,
+.offer,
+.clean,
+.projects,
+.about,
+.testimonials,
+.package,
+footer {
   padding: 3em 0;
+}
+
+.projects,
+.about,
+.testimonials {
+  text-align: center;
+}
+
+.about ul {
+  text-align: left;
+}
+
+.other-services {
+
 }
