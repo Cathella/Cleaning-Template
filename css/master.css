@@ -85,7 +85,7 @@ nav li a {
 
 .intro {
   background-color: #43b6ac;
-  background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.4), rgba(67, 182, 172, 0.9)), url(../img/lady.jpg);
+  background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.1), rgba(67, 182, 172, 0.5)), url(../img/lady.jpg);
   background-size: cover;
   justify-content: center;
   padding: 7em 0;
@@ -126,15 +126,15 @@ label {
 }
 
 input {
-  height: 40px;
+  height: 45px;
   border: 1px solid #ddd;
-  margin: 0 0 .8em 0;
+  margin: 0 0 1em 0;
   border-radius: 4px;
   padding-left: 6px;
 }
 
 button {
-  height: 45px;
+  height: 50px;
   border: none;
   border-radius: 4px;
   background: #43b6ac;
@@ -146,14 +146,15 @@ button {
 .intro a,
 .book {
   display: inline-block;
-  background: #89bf3e;
-  color: #1e4724;
+  background: #43b6ac;
+  color: #fff;
   font-weight: 700;
   font-size: 1.2em;
   text-decoration: none;
   padding: 1em;
   margin: 1em 0;
   border-radius: 4px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .2);
 }
 
 .content {
@@ -199,7 +200,6 @@ h1#why {
 }
 
 .content li {
-  /* background: #89bf3e; */
   width: 23%;
   padding: 2em 1em;
   text-align: center;
@@ -207,8 +207,6 @@ h1#why {
   border: 1px solid #ddd;
   margin: 0 0 1em 0;
   color: #888;
-  /* height: 150px; */
-  /* line-height: 150px; */
   border-radius: 6px;
 }
 
@@ -217,9 +215,58 @@ h1#why {
 .projects,
 .about,
 .testimonials,
-.package,
 footer {
   padding: 3em 0;
+}
+
+.projects,
+.about {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.projects h1 {
+  font-size: 2.5em;
+}
+
+.projects h1 span {
+  font-size: .7em;
+  color: #888;
+}
+
+.recents {
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.recents div {
+  width: 32%;
+  height: 270px;
+  border-radius: 6px;
+  background-image: url(../img/Before-After-1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.recents div a {
+  position: absolute;
+  display: block;
+  bottom: ;
+  right: 3px;
+  bottom: 0;
+  background: #43b6ac;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 6px 0;
+}
+
+.recents .img2 {
+  background-image: url(../img/Before-After-2.jpg);
+}
+
+.recents .img3 {
+  background-image: url(../img/Air-Duct-CTA-01-161024-580e59303b32c.jpg);
 }
 
 .projects,
@@ -230,6 +277,50 @@ footer {
 
 .about ul {
   text-align: left;
+  list-style: none;
+  margin: 2em 0 0 0;
+  position: relative;
+}
+
+.about li {
+  width: 23%;
+  background: #ddd;
+  /* padding: 1em; */
+  height: 300px;
+}
+
+.about li p {
+  /* position: absolute;
+  bottom: 0;
+  background: yellow;
+  padding: 1em; */
+}
+
+.package {
+  background: url(../img/girl.jpg);
+  background-size: cover;
+  padding: 7em 0;
+}
+
+.package-content {
+  width: 85%;
+  margin: 2em auto;
+}
+
+.package-content h1 {
+  font-size: 2.5em;
+  width: 45%;
+  margin: 2em 0 .5em 0;
+}
+
+.package-content h1 span {
+  color: #89bf3e;
+}
+
+.package-content p {
+  font-size: 1.2em;
+  color: #888;
+
 }
 
 .other-services {
