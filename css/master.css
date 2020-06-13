@@ -44,8 +44,8 @@ nav a {
 nav,
 nav ul,
 .intro,
-.offer,
 .clean,
+.content ul,
 .recents,
 .about ul,
 .other-services,
@@ -56,6 +56,7 @@ footer ul {
 }
 
 nav,
+.content ul,
 .about ul,
 .other-services,
 footer ul {
@@ -83,9 +84,11 @@ nav li a {
 }
 
 .intro {
-  background: #43b6ac;
+  background-color: #43b6ac;
+  background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.4), rgba(67, 182, 172, 0.9)), url(../img/lady.jpg);
+  background-size: cover;
   justify-content: center;
-  /* align-items: center; */
+  padding: 7em 0;
 }
 
 .intro div {
@@ -103,6 +106,7 @@ nav li a {
   font-size: 1.5em;
   margin: .7em 0;
   color: #1e4724;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .intro form {
@@ -151,8 +155,37 @@ button {
   border-radius: 4px;
 }
 
+.content {
+  width: 85%;
+  margin: 0 auto;
+}
 
-.intro,
+.content div {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  margin: 2em 0 1em 0;
+}
+
+.content h1 span {
+  color: #89bf3e;
+}
+
+.content ul {
+  list-style: none;
+  margin: 2em 0;
+}
+
+.content li {
+  background: #89bf3e;
+  width: 23%;
+  padding: 1em 0;
+  text-align: center;
+}
+
 .offer,
 .clean,
 .projects,
