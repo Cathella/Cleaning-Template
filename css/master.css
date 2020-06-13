@@ -1,7 +1,44 @@
+/*
+-> Colors
+#89bf3e
+#1e4724
+#43b6ac
+*/
+
 * {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1em;
+}
+
+header {
+  /* background: green; */
+  overflow: hidden;
+}
+
+nav {
+  width: 85%;
+  margin: 1em auto;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.logo {
+  color: #1e4724;
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: -1.7px;
+}
+
+.phrase {
+  text-transform: capitalize;
+  color: #89bf3e;
 }
 
 nav,
@@ -19,7 +56,6 @@ footer ul {
 }
 
 nav,
-.intro,
 .about ul,
 .other-services,
 footer ul {
@@ -40,6 +76,79 @@ nav ul {
 
 nav li {
   margin: 0 1em;
+}
+
+nav li a {
+  color: #888;
+}
+
+.intro {
+  background: #43b6ac;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.intro div {
+  width: 45%;
+  /* background: yellow */
+}
+
+.intro h1 {
+  margin: 2em 3em 0 0;
+  font-size: 2.5em;
+  color: white;
+}
+
+.intro p {
+  font-size: 1.5em;
+  margin: .7em 0;
+  color: #1e4724;
+}
+
+.intro form {
+  background: white;
+  padding: 2.5em 3em;
+  border-radius: 6px;
+  position: a;
+  width: 25%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .2);
+}
+
+label {
+  font-size: 1.2em;
+  text-align: center;
+  color: #888;
+  margin: 1em 0;
+}
+
+input {
+  height: 40px;
+  border: 1px solid #ddd;
+  margin: 0 0 .8em 0;
+  border-radius: 4px;
+  padding-left: 6px;
+}
+
+button {
+  height: 45px;
+  border: none;
+  border-radius: 4px;
+  background: #43b6ac;
+  color: white;
+  font-size: 1.05em;
+  margin-bottom: 1em;
+}
+
+.intro a {
+  display: inline-block;
+  background: #89bf3e;
+  color: #1e4724;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
 }
 
 
