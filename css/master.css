@@ -143,7 +143,8 @@ button {
   margin-bottom: 1em;
 }
 
-.intro a {
+.intro a,
+.book {
   display: inline-block;
   background: #89bf3e;
   color: #1e4724;
@@ -158,32 +159,57 @@ button {
 .content {
   width: 85%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .content div {
-  text-align: center;
+  width: 40%;
+  margin: 0 5em 0 0;
+}
+
+.content div#div2 {
+  width: 45%;
 }
 
 .content h1 {
   font-size: 2.5em;
   text-transform: capitalize;
-  margin: 2em 0 1em 0;
+  margin: 2em 0 .5em 0;
+  color: #1e4724;
+}
+
+h1#why {
+  margin: 0 0 .5em 0;
 }
 
 .content h1 span {
   color: #89bf3e;
 }
 
+.content p {
+  color: #888;
+  line-height: 1.7;
+}
+
 .content ul {
   list-style: none;
-  margin: 2em 0;
+  margin: 3em 0 0 0;
+  flex-wrap: wrap;
 }
 
 .content li {
-  background: #89bf3e;
+  /* background: #89bf3e; */
   width: 23%;
-  padding: 1em 0;
+  padding: 2em 1em;
   text-align: center;
+  width: 44.5%;
+  border: 1px solid #ddd;
+  margin: 0 0 1em 0;
+  color: #888;
+  /* height: 150px; */
+  /* line-height: 150px; */
+  border-radius: 6px;
 }
 
 .offer,
