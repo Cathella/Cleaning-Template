@@ -48,7 +48,6 @@ nav ul,
 .content ul,
 .recents,
 .about ul,
-.other-services,
 .other-services ul,
 footer ul {
   display: flex;
@@ -58,7 +57,7 @@ footer ul {
 nav,
 .content ul,
 .about ul,
-.other-services,
+.other-services ul,
 footer ul {
   justify-content: space-between;
   align-items: center;
@@ -85,8 +84,11 @@ nav li a {
 
 .intro {
   background-color: #43b6ac;
-  background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.1), rgba(67, 182, 172, 0.5)), url(../img/lady.jpg);
+  /* background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.4), rgba(67, 182, 172, 0.9)), url(../img/intro.jpg); */
+  background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.3), rgba(0, 0, 0, 0.9)), url(../img/intro.jpg);
+  /* background-image: url(../img/intro.jpg); */
   background-size: cover;
+  background-position: center;
   justify-content: center;
   padding: 7em 0;
 }
@@ -137,7 +139,7 @@ button {
   height: 50px;
   border: none;
   border-radius: 4px;
-  background: #43b6ac;
+  background: #1e4724;
   color: white;
   font-size: 1.05em;
   margin-bottom: 1em;
@@ -146,7 +148,7 @@ button {
 .intro a,
 .book {
   display: inline-block;
-  background: #43b6ac;
+  background: #89bf3e;
   color: #fff;
   font-weight: 700;
   font-size: 1.2em;
@@ -178,10 +180,12 @@ button {
   text-transform: capitalize;
   margin: 2em 0 .5em 0;
   color: #1e4724;
+  letter-spacing: -1.7px;
 }
 
 h1#why {
   margin: 0 0 .5em 0;
+  letter-spacing: -1.7px;
 }
 
 .content h1 span {
@@ -227,6 +231,8 @@ footer {
 
 .projects h1 {
   font-size: 2.5em;
+  color: #1e4724;
+  letter-spacing: -1.7px;
 }
 
 .projects h1 span {
@@ -254,7 +260,7 @@ footer {
   bottom: ;
   right: 3px;
   bottom: 0;
-  background: #43b6ac;
+  background: #89bf3e;
   color: white;
   text-decoration: none;
   padding: 1em;
@@ -302,7 +308,8 @@ footer {
   padding: 7em 0;
 }
 
-.package-content {
+.package-content,
+.services-content {
   width: 85%;
   margin: 2em auto;
 }
@@ -311,6 +318,8 @@ footer {
   font-size: 2.5em;
   width: 45%;
   margin: 2em 0 .5em 0;
+  color: #1e4724;
+  letter-spacing: -1.7px;
 }
 
 .package-content h1 span {
@@ -324,5 +333,43 @@ footer {
 }
 
 .other-services {
+  overflow: hidden;
+  background-color: #1e4724;
+}
 
+.services-content {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 2em 0;
+}
+
+.services-content p {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.other-services ul {
+  margin: 4em 0 2em 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.other-services li {
+  border: 1px solid white;
+  width: 33.17%;
+  height: 60px;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.other-services li#top {
+  border-top: none;
+}
+
+.other-services li#right {
+  border-right: none;
+}
+
+.other-services li.right {
+  border-right: none;
 }
