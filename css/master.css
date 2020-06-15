@@ -88,10 +88,10 @@ nav li a {
 .intro {
   background-color: #43b6ac;
   /* background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.4), rgba(67, 182, 172, 0.9)), url(../img/intro.jpg); */
-  background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.3), rgba(0, 0, 0, 0.9)), url(../img/intro.jpg);
+  background-image: linear-gradient(to left, rgba(67, 182, 172, 0), rgba(30, 71, 36, 1)), url(../img/intro.jpg);
   /* background-image: url(../img/intro.jpg); */
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   justify-content: center;
   padding: 7em 0;
 }
@@ -305,6 +305,19 @@ footer {
   padding: 2em 1em;
   line-height: 2;
   color: #888;
+  position: relative;
+}
+
+.about li span {
+  display: block;
+  position: absolute;
+  bottom: 2em;
+}
+
+.about span a {
+  text-decoration: none;
+  color: #89bf3e;
+  border-bottom: 1px solid #89bf3e;
 }
 
 .about {
@@ -314,6 +327,26 @@ footer {
 .img-side {
   width: 60%;
   background: green;
+}
+
+#img-side1 {
+  background: url(../img/team.jpg);
+  background-size: cover;
+}
+
+#img-side2 {
+  background: url(../img/service.jpg);
+  background-size: cover;
+}
+
+#img-side3 {
+  background: url(../img/timer.jpg);
+  background-size: cover;
+}
+
+#img-side4 {
+  background: url(../img/local2.jpg);
+  background-size: cover;
 }
 
 .package {
