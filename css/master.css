@@ -49,7 +49,9 @@ nav ul,
 .recents,
 .about ul,
 .other-services ul,
-.footer-content {
+.footer-content,
+.persons,
+.tests {
   display: flex;
   flex-direction: row;
 }
@@ -58,7 +60,8 @@ nav,
 .content ul,
 .about ul,
 .other-services ul,
-.footer-content {
+.footer-content,
+.persons {
   justify-content: space-between;
   align-items: center;
 }
@@ -218,7 +221,6 @@ h1#why {
 .clean,
 .projects,
 .about,
-.testimonials,
 footer {
   padding: 3em 0;
 }
@@ -310,7 +312,8 @@ footer {
 }
 
 .package-content,
-.services-content {
+.services-content,
+.test-content {
   width: 85%;
   margin: 2em auto;
 }
@@ -397,4 +400,55 @@ footer {
 .important-links a {
   color: #888;
   text-decoration: none;
+}
+
+.test-content {
+  padding: 4em 0;
+}
+
+.test-content h1 {
+  margin: 0 0 1em 0;
+  color: #1e4724;
+}
+
+.persons {
+  text-align: left;
+  margin: 3em 0 0 0;
+}
+
+.test-intro {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 2;
+  color: #888;
+}
+
+.tests {
+  border: 1px solid #eee;
+  width: 48%;
+}
+
+.profile {
+  width: 40%;
+  background: #ddd;
+  background: url(../img/man.jpg);
+  background-size: cover;
+}
+
+div#prof2 {
+  background: url(../img/woman.jpg);
+  background-size: cover;
+}
+
+.tests p {
+  color: #888;
+  padding: 1em 1em .5em 1em;
+  font-size: .9em;
+  line-height: 1.5;
+}
+
+p.prof-name {
+  text-transform: uppercase;
+  color: #89bf3e;
+  font-weight: 700;
 }
