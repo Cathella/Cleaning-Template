@@ -220,7 +220,6 @@ h1#why {
 .offer,
 .clean,
 .projects,
-.about,
 footer {
   padding: 3em 0;
 }
@@ -287,22 +286,34 @@ footer {
 .about ul {
   text-align: left;
   list-style: none;
-  margin: 2em 0 0 0;
+  margin: 4em 0 0 0;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .about li {
-  width: 23%;
-  background: #ddd;
-  /* padding: 1em; */
+  background: #eee;
   height: 300px;
+  width: 49%;
+  position: relative;
+  margin: 0 0 1.7em 0;
+  display: flex;
 }
 
 .about li p {
-  /* position: absolute;
-  bottom: 0;
-  background: yellow;
-  padding: 1em; */
+  width: 30%;
+  padding: 2em 1em;
+  line-height: 2;
+  color: #888;
+}
+
+.about {
+  margin-top: 5em;
+}
+
+.img-side {
+  width: 60%;
+  background: green;
 }
 
 .package {
@@ -406,9 +417,15 @@ footer {
   padding: 4em 0;
 }
 
-.test-content h1 {
+.test-content h1,
+.about h1 {
   margin: 0 0 1em 0;
   color: #1e4724;
+}
+
+.abt-p {
+  color: #888;
+  line-height: 2;
 }
 
 .persons {
