@@ -49,7 +49,7 @@ nav ul,
 .recents,
 .about ul,
 .other-services ul,
-footer ul {
+.footer-content {
   display: flex;
   flex-direction: row;
 }
@@ -58,7 +58,7 @@ nav,
 .content ul,
 .about ul,
 .other-services ul,
-footer ul {
+.footer-content {
   justify-content: space-between;
   align-items: center;
 }
@@ -224,7 +224,8 @@ footer {
 }
 
 .projects,
-.about {
+.about,
+.footer-content {
   width: 85%;
   margin: 0 auto;
 }
@@ -372,4 +373,28 @@ footer {
 
 .other-services li.right {
   border-right: none;
+}
+
+.footer-content {
+  align-items: flex-start;
+}
+
+.footer-content p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin: 0 0 .8em 0;
+}
+
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content li {
+  line-height: 2;
+}
+
+.footer-services a,
+.important-links a {
+  color: #888;
+  text-decoration: none;
 }
