@@ -433,23 +433,31 @@ footer {
 }
 
 .other-services li {
-  border: 1px solid white;
-  width: 33.17%;
-  height: 60px;
-  border-left: 0;
-  border-bottom: 0;
+  /* border: 1px solid white; */
+  width: 33%;
+  height: 300px;
+  position: relative;
 }
 
-.other-services li#top {
-  border-top: none;
+.other-services li.medical {
+  background: url(../img/medical.jpg);
+  background-size: cover;
 }
 
-.other-services li#right {
-  border-right: none;
+.other-services li.odour {
+  background: url(../img/odor.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.other-services li.right {
-  border-right: none;
+.other-services li a {
+  text-decoration: none;
+  position: absolute;
+  display: block;
+  background: #89bf3e;
+  color: white;
+  bottom: 0;
+  padding: 1em;
 }
 
 .footer-content {
