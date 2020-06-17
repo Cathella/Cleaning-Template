@@ -16,7 +16,6 @@ body {
 }
 
 header {
-  /* background: green; */
   overflow: hidden;
 }
 
@@ -87,9 +86,11 @@ nav li a {
   background-color: #43b6ac;
   /* background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.4), rgba(67, 182, 172, 0.9)), url(../img/intro.jpg); */
   background-image: linear-gradient(to left, rgba(67, 182, 172, 0), rgba(30, 71, 36, 1)), url(../img/intro.jpg);
+  /* background-image: url(../img/duct.jpg); */
   /* background-image: url(../img/intro.jpg); */
   background-size: cover;
-  background-position: center right;
+  /* background-position: center right; */
+  /* background-position: top left; */
   justify-content: center;
   padding: 7em 0;
 }
@@ -168,12 +169,15 @@ button {
   justify-content: space-between;
 }
 
-.content > div {
-  width: 32%;
+.content div.abt-imagez {
+  width: 45%;
+  background: url(../img/abt.jpeg);
+  background-size: cover;
+  height: 600px;
   /* margin: 0 5em 0 0; */
 }
 
-.content div#div2 {
+.content #div2 {
   width: 45%;
 }
 
@@ -197,6 +201,10 @@ h1#why {
 .content p {
   color: #888;
   line-height: 1.7;
+}
+
+.offer-desc {
+  width: 30%;
 }
 
 .content section {
@@ -242,6 +250,10 @@ h1#why {
 .projects,
 footer {
   padding: 3em 0;
+}
+
+footer {
+  background: #1e4724;
 }
 
 .projects,
@@ -437,10 +449,31 @@ footer {
   width: 33%;
   height: 300px;
   position: relative;
+  margin: 0 0 .5em 0;
 }
 
 .other-services li.medical {
   background: url(../img/medical.jpg);
+  background-size: cover;
+}
+
+.other-services li.mold {
+  background: url(../img/mold.jpg);
+  background-size: cover;
+}
+
+.other-services li.chimney {
+  background: url(../img/chimney.jpg);
+  background-size: cover;
+}
+
+.other-services li.furnace {
+  background: url(../img/furnace.jpg);
+  background-size: cover;
+}
+
+.other-services li.vent {
+  background: url(../img/vent.jpg);
   background-size: cover;
 }
 
@@ -458,10 +491,12 @@ footer {
   color: white;
   bottom: 0;
   padding: 1em;
+  width: 92.05%;
 }
 
 .footer-content {
   align-items: flex-start;
+  color: rgba(255, 255, 255, .7);
 }
 
 .footer-content p {
@@ -478,9 +513,13 @@ footer {
   line-height: 2;
 }
 
+footer .light-logo {
+  color: #89bf3e;
+}
+
 .footer-services a,
 .important-links a {
-  color: #888;
+  color: rgba(255, 255, 255, .7);
   text-decoration: none;
 }
 
