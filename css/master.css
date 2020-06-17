@@ -1,0 +1,585 @@
+/*
+-> Colors
+#89bf3e
+#1e4724
+#43b6ac
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1em;
+}
+
+header {
+  overflow: hidden;
+}
+
+nav {
+  width: 85%;
+  margin: 1em auto;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.logo {
+  color: #1e4724;
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: -1.7px;
+}
+
+.phrase {
+  text-transform: capitalize;
+  color: #89bf3e;
+}
+
+nav,
+nav ul,
+.intro,
+.clean,
+.recents,
+.about ul,
+.other-services ul,
+.footer-content,
+.persons,
+.tests {
+  display: flex;
+  flex-direction: row;
+}
+
+nav,
+.about ul,
+.other-services ul,
+.footer-content,
+.persons {
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div,
+.intro form,
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav li a {
+  color: #888;
+}
+
+.intro {
+  background-color: #43b6ac;
+  /* background-image: linear-gradient(to bottom, rgba(67, 182, 172, 0.4), rgba(67, 182, 172, 0.9)), url(../img/intro.jpg); */
+  background-image: linear-gradient(to left, rgba(67, 182, 172, 0), rgba(30, 71, 36, 1)), url(../img/intro.jpg);
+  /* background-image: url(../img/duct.jpg); */
+  /* background-image: url(../img/intro.jpg); */
+  background-size: cover;
+  /* background-position: center right; */
+  /* background-position: top left; */
+  justify-content: center;
+  padding: 7em 0;
+}
+
+.intro div {
+  width: 45%;
+  /* background: yellow */
+}
+
+.intro h1 {
+  margin: 2em 3em 0 0;
+  font-size: 2.5em;
+  color: white;
+}
+
+.intro p {
+  font-size: 1.5em;
+  margin: .7em 0;
+  color: #1e4724;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.intro form {
+  background: white;
+  padding: 2.5em 3em;
+  border-radius: 6px;
+  position: a;
+  width: 25%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .2);
+}
+
+label {
+  font-size: 1.2em;
+  text-align: center;
+  color: #888;
+  margin: 1em 0;
+}
+
+input {
+  height: 45px;
+  border: 1px solid #ddd;
+  margin: 0 0 1em 0;
+  border-radius: 4px;
+  padding-left: 6px;
+}
+
+button {
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background: #1e4724;
+  color: white;
+  font-size: 1.05em;
+  margin-bottom: 1em;
+}
+
+.intro a,
+.book {
+  display: inline-block;
+  background: #89bf3e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .2);
+}
+
+.content {
+  width: 85%;
+  margin: 5em auto 0em auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content div.abt-imagez {
+  width: 45%;
+  background: url(../img/abt.jpeg);
+  background-size: cover;
+  height: 600px;
+  /* margin: 0 5em 0 0; */
+}
+
+.content #div2 {
+  width: 45%;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  margin: 0 0 .5em 0;
+  color: #1e4724;
+  letter-spacing: -1.7px;
+}
+
+h1#why {
+  margin: 0 0 .5em 0;
+  letter-spacing: -1.7px;
+}
+
+.content h1 span {
+  color: #89bf3e;
+}
+
+.content p {
+  color: #888;
+  line-height: 1.7;
+}
+
+.offer-desc {
+  width: 30%;
+}
+
+.content section {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  background: #eee;
+}
+
+.content ul {
+  list-style: none;
+  width: 50%;
+}
+
+.content li {
+  color: #888;
+  display: flex;
+  align-items: center;
+  padding: 1.5em 2em;
+  border-bottom: 1px dotted #ddd;
+}
+
+.content li img {
+  width: 70px;
+}
+
+.content li p {
+  padding: ;
+  margin: 1em 0 0 1em;
+  width: 50%;
+  line-height: 1.7;
+}
+
+.img-offer {
+  width: 50%;
+  background: url(../img/happy.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.offer,
+.clean,
+.projects,
+footer {
+  padding: 3em 0;
+}
+
+footer {
+  background: #1e4724;
+}
+
+.projects,
+.about,
+.footer-content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.projects {
+  margin-top: 2.5em;
+  margin-bottom: 5em;
+}
+
+.projects h1 {
+  font-size: 2.5em;
+  color: #1e4724;
+  letter-spacing: -1.7px;
+}
+
+.projects h1 span {
+  color: #888;
+  font-size: .4em;
+  letter-spacing: 0px;
+  font-weight: normal;
+}
+
+.recents {
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.recents div {
+  width: 32%;
+  height: 270px;
+  border-radius: 6px;
+  background-image: url(../img/Before-After-1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.recents div a {
+  position: absolute;
+  display: block;
+  bottom: ;
+  right: 3px;
+  bottom: 0;
+  background: #89bf3e;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 6px 0;
+}
+
+.recents .img2 {
+  background-image: url(../img/Before-After-2.jpg);
+}
+
+.recents .img3 {
+  background-image: url(../img/Air-Duct-CTA-01-161024-580e59303b32c.jpg);
+}
+
+.projects,
+.about,
+.testimonials {
+  text-align: center;
+}
+
+.about ul {
+  text-align: left;
+  list-style: none;
+  margin: 4em 0 0 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.about li {
+  background: #eee;
+  height: 300px;
+  width: 49%;
+  position: relative;
+  margin: 0 0 1.7em 0;
+  display: flex;
+}
+
+.about li p {
+  width: 30%;
+  padding: 2em 1em;
+  line-height: 2;
+  color: #888;
+  position: relative;
+}
+
+.about li span {
+  display: block;
+  position: absolute;
+  bottom: 2em;
+}
+
+.about span a {
+  text-decoration: none;
+  color: #89bf3e;
+  border-bottom: 1px solid #89bf3e;
+}
+
+.about {
+  margin-top: 5em;
+}
+
+.img-side {
+  width: 60%;
+  background: green;
+}
+
+#img-side1 {
+  background: url(../img/team.jpg);
+  background-size: cover;
+}
+
+#img-side2 {
+  background: url(../img/service.jpg);
+  background-size: cover;
+}
+
+#img-side3 {
+  background: url(../img/timer.jpg);
+  background-size: cover;
+}
+
+#img-side4 {
+  background: url(../img/local2.jpg);
+  background-size: cover;
+}
+
+.package {
+  background: url(../img/girl.jpg);
+  background-size: cover;
+  padding: 7em 0;
+}
+
+.package-content,
+.services-content,
+.test-content {
+  width: 85%;
+  margin: 2em auto;
+}
+
+.package-content h1 {
+  font-size: 2.5em;
+  width: 45%;
+  margin: 2em 0 .5em 0;
+  color: #1e4724;
+  letter-spacing: -1.7px;
+}
+
+.package-content h1 span {
+  color: #89bf3e;
+}
+
+.package-content p {
+  font-size: 1.2em;
+  color: #888;
+
+}
+
+.other-services {
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.services-content {
+  text-align: center;
+  color: #1e4724;
+  padding: 2em 0;
+}
+
+.services-content p {
+  font-size: 1em;
+  margin: 1em auto;
+  width: 40%;
+  line-height: 1.7;
+  color: #888;
+}
+
+.other-services ul {
+  margin: 4em 0 2em 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.other-services li {
+  /* border: 1px solid white; */
+  width: 33%;
+  height: 300px;
+  position: relative;
+  margin: 0 0 .5em 0;
+}
+
+.other-services li.medical {
+  background: url(../img/medical.jpg);
+  background-size: cover;
+}
+
+.other-services li.mold {
+  background: url(../img/mold.jpg);
+  background-size: cover;
+}
+
+.other-services li.chimney {
+  background: url(../img/chimney.jpg);
+  background-size: cover;
+}
+
+.other-services li.furnace {
+  background: url(../img/furnace.jpg);
+  background-size: cover;
+}
+
+.other-services li.vent {
+  background: url(../img/vent.jpg);
+  background-size: cover;
+}
+
+.other-services li.odour {
+  background: url(../img/odor.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.other-services li a {
+  text-decoration: none;
+  position: absolute;
+  display: block;
+  background: #89bf3e;
+  color: white;
+  bottom: 0;
+  padding: 1em;
+  width: 92.05%;
+}
+
+.footer-content {
+  align-items: flex-start;
+  color: rgba(255, 255, 255, .7);
+}
+
+.footer-content p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin: 0 0 .8em 0;
+}
+
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content li {
+  line-height: 2;
+}
+
+footer .light-logo {
+  color: #89bf3e;
+}
+
+.footer-services a,
+.important-links a {
+  color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+}
+
+.test-content {
+  padding: 4em 0;
+}
+
+.test-content h1,
+.about h1 {
+  margin: 0 0 1em 0;
+  color: #1e4724;
+}
+
+.abt-p {
+  color: #888;
+  line-height: 2;
+}
+
+.persons {
+  text-align: left;
+  margin: 3em 0 0 0;
+}
+
+.test-intro {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 2;
+  color: #888;
+}
+
+.tests {
+  border: 1px solid #eee;
+  width: 48%;
+}
+
+.profile {
+  width: 30%;
+  background: #ddd;
+  background: url(../img/man.jpg);
+  background-size: cover;
+}
+
+.prof-test {
+  width: 65%;
+}
+
+div#prof2 {
+  background: url(../img/woman.jpg);
+  background-size: cover;
+}
+
+.tests p {
+  color: #888;
+  padding: 1em 1em .5em 1em;
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+p.prof-name {
+  text-transform: uppercase;
+  color: #89bf3e;
+  font-weight: 700;
+}
